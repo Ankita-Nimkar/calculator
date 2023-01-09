@@ -15,6 +15,9 @@ keys.addEventListener("click", (e) => {
 
     if (!action) {
       screenNum.textContent += key.textContent;
+      if (keyContent === 0) {
+        ans.textContent = 0;
+      }
     } else {
       if (
         action === "add" ||
