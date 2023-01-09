@@ -54,6 +54,9 @@ keys.addEventListener("click", (e) => {
         console.log("clear-key");
         ans.textContent = "";
         screenNum.textContent = "";
+        Array.from(key.parentNode.children).forEach((k) =>
+          k.classList.remove("pressed")
+        );
       }
     }
 
